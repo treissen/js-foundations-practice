@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> js foundations lesson 3</title>
+</head>
+<body>
+    Javascript foundations part 3 practice.
+    I did not add if else if the user cancels etc.
+
+    <script>
+        // 1. write a function called add7 that takes
+        // one number and returns that number + 7
+        //  arrow function version below... uncomment to see in browser
+       
+
+        // let add7 = () => {
+        //     let userNum = prompt('input number to add to 7',0);
+        //     let result = (userNum + 7);
+        //     alert(`the result of ${userNum} + 7 equals ` + result);
+        // }
+        // add7()
+        
+
+        // 2.  write a function called multiply that takes 2 numbers
+        //  and returns their product.
+        //  traditional function declaration with prompt
+
+        // function multiply() {
+        //     alert('this function with multiply two numbers.')
+        //     let num1 = prompt('first number');
+        //     let num2 = prompt('second number');
+        //     alert('loading... click ok to continue');
+        //     alert('the result is '+ (num1*num2));
+        // }
+        // multiply();
+
+        // 3. write a function called capiltalize that takes a string
+        // and returns that string with only the first letter 
+        // capitalized . make sure that it can take strings that 
+        // are lowercase UPPERCASE or BoTh.
+        // function expression method with prompt
+
+        // const capitalize = function(){
+        //     var str = prompt('insert any sentence and I will capitalize the first and only the first letter.')
+        //     let lowerCase = str.toLowerCase();
+        //     let firstLetter = str.charAt(0);
+        //     let caps = firstLetter.toUpperCase(1);
+        //     let minusFirstChar = str.slice(1);
+        //     alert(caps + lowerCase);
+        // };
+        // capitalize();
+
+        //  4. write a function called lastLetter that takes a
+        // string and returns the veery last letter of that string
+
+        let lastLetter = () => {
+            alert('this will only return the last letter of whatever you put into it.');
+            userString = prompt('what is your sentence?');
+            result = userString.charAt(userString.length -1);
+            alert('the last character of your sentence was: ' + result);
+        };
+        lastLetter();
+    </script>
+</body>
+</html>
